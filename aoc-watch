@@ -1,0 +1,60 @@
+#!/bin/bash
+
+# Check if a day argument is provided
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 <day>"
+    echo "Example: $0 1"
+    exit 1
+fi
+
+# Convert input to two-digit format for file naming
+DAY=$(printf "%02d" "$1" 2>/dev/null)
+DAY_UNPADDED=$1
+
+# Check if conversion was successful and result is a number
+if [ $? -ne 0 ] || ! [[ $DAY =~ ^[0-9]{2}$ ]]; then
+    echo "Error: Day must be a number between 1 and 25"
+    exit 1
+fi
+
+# Check if day is within valid range
+if [ "$DAY" -lt 1 ] || [ "$DAY" -gt 25 ]; then
+    echo "Error: Day must be between 1 and 25"
+    exit 1
+fi
+
+# Check if the solution file exists
+SOLUTION_FILE="solutions/day${DAY}.py"
+if [ ! -f "$SOLUTION_FILE" ]; then
+    echo "Error: Solution file $SOLUTION_FILE does not exist"
+    exit 1
+fi
+
+watchexec -rc -w $SOLUTION_FILE "
+    output=\$(aocd ${DAY} 2024 | pypy3 -u $SOLUTION_FILE | tee /dev/pts/0)
+
+    if [ -z \"\$output\" ]; then
+        exit 1
+    fi
+
+    answer1=\$(echo \"\$output\" | head -n 1)
+    answer2=\$(echo \"\$output\" | head -n 2 | tail -n 1)
+    echo -e \"\nPress:\"
+    echo \"  '1' to submit part 1 answer: \$answer1\"
+    if [ ! -z \"\$answer2\" ]; then
+        echo \"  '2' to submit part 2 answer: \$answer2\"
+    fi
+    read -n1 -s key
+    case \$key in
+        1)
+            echo -e \"\nSubmitting part 1 answer: \$answer1\"
+            python3 -c \"from aocd import submit; submit('\$answer1', part='a', day=${DAY_UNPADDED}, year=2024)\"
+            ;;
+        2)
+            if [ ! -z \"\$answer2\" ]; then
+                echo -e \"\nSubmitting part 2 answer: \$answer2\"
+                python3 -c \"from aocd import submit; submit('\$answer2', part='b', day=${DAY_UNPADDED}, year=2024)\"
+            fi
+            ;;
+    esac
+"
