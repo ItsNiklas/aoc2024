@@ -18,5 +18,82 @@ Other:
 - Tiles below are generated via [aoc-tiles](https://github.com/LiquidFun/aoc_tiles).
 
 <!-- AOC TILES BEGIN -->
-
+<h1 align="center">
+  2024 - 2 ⭐ - Python
+</h1>
+<a href="solutions/day01.py">
+  <img src=".aoc_tiles/tiles/2024/01.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2024/02.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2024/03.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2024/04.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2024/05.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2024/06.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2024/07.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2024/08.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2024/09.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2024/10.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2024/11.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2024/12.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2024/13.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2024/14.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2024/15.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2024/16.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2024/17.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2024/18.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2024/19.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2024/20.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2024/21.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2024/22.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2024/23.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2024/24.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2024/25.png" width="161px">
+</a>
 <!-- AOC TILES END -->
