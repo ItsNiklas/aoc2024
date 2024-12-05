@@ -2,24 +2,25 @@
 
 My solutions for [Advent of Code](https://adventofcode.com/2024) in 2024. Probably done mostly in Python 3.13 🐍.
 
-Keep in mind these are optimized solutions, not necessarily the one I used to solve the problem.
+Keep in mind these are optimized solutions, not necessarily the one I used to solve the problem at first.
 
 Rules:
 
 - Python: No external libraries, only the standard library.
 - Always a **general** solution, not just for the input. Any input should work.
 - A short runtime. No brute force solutions.
+- No AI-solutions used! 🙅🏽‍♂️ (Contrary to the leaderboard)
 
 Other:
 
-- Input data handling is via the amazing [`aocd`](https://github.com/wimglenn/advent-of-code-data) library.
+- Input data handling is via the amazing [`aocd`](https://github.com/wimglenn/advent-of-code-data).
 - Automatic execution and submission via `aocd` and [`watchexec`](https://watchexec.github.io/).
-- `solutions/` contain the source files to solve the problem, one for each day. Executable to print both results. Keep in mind they are _cleaned_ solutions.
+- `solutions/` contain the source files to solve the problem, one for each day. Executable via stdin to print both results. Keep in mind they are _cleaned_ solutions. I'd like to keep the two parts in separate functions, even though they might share code.
 - Tiles below are generated via [aoc-tiles](https://github.com/LiquidFun/aoc_tiles).
 
 <!-- AOC TILES BEGIN -->
 <h1 align="center">
-  2024 - 8 ⭐ - Python
+  2024 - 10 ⭐ - Python
 </h1>
 <a href="solutions/day01.py">
   <img src=".aoc_tiles/tiles/2024/01.png" width="161px">
@@ -33,7 +34,7 @@ Other:
 <a href="solutions/day04.py">
   <img src=".aoc_tiles/tiles/2024/04.png" width="161px">
 </a>
-<a href="None">
+<a href="solutions/day05.py">
   <img src=".aoc_tiles/tiles/2024/05.png" width="161px">
 </a>
 <a href="None">
