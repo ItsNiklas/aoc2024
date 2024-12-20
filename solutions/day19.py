@@ -6,13 +6,11 @@ inp = data[2:]
 
 
 @cache
-def count_towel(design, towel = ""):  # Normal dp solution with @cache <3
-    if towel == design:
+def count_towel(design):  # Normal dp solution with @cache <3
+    if not design:
         return 1
 
-    return sum(
-        count_towel(design, towel + t) for t in parts if design.startswith(towel + t)
-    )
+    return sum(count_towel(design[len(t) :]) for t in parts if design.startswith(t))
 
 
 def part1():
