@@ -20,7 +20,7 @@ Other:
 
 <!-- AOC TILES BEGIN -->
 <h1 align="center">
-  2024 - 42 ⭐ - Python
+  2024 - 44 ⭐ - Python
 </h1>
 <a href="solutions/day01.py">
   <img src=".aoc_tiles/tiles/2024/01.png" width="161px">
@@ -85,7 +85,7 @@ Other:
 <a href="solutions/day21.py">
   <img src=".aoc_tiles/tiles/2024/21.png" width="161px">
 </a>
-<a href="None">
+<a href="solutions/day22.py">
   <img src=".aoc_tiles/tiles/2024/22.png" width="161px">
 </a>
 <a href="None">
